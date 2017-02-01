@@ -1,0 +1,108 @@
+﻿#container
+{
+    width:1890px;
+    height:auto;
+    max-width:1890px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#logo
+{
+    width:800px;
+    height:600px;
+}
+
+body
+{
+    background-color:#000000;
+    text-align:center;
+}
+
+p
+{
+    color:#ffffff;
+}
+
+#movieTitle
+{
+    font-size:40px;
+    font-style: normal;
+    margin-top:0;
+    margin-bottom:0px;
+}
+
+#subTitle
+{
+    font-size:25px;
+    margin-top:5px;
+}
+
+#premier
+{
+    font-size:37px;
+}
+
+#producer
+{
+    font-size:30px;
+}
+
+#starring
+{
+    font-size:25px;
+}
+
+#actors
+{
+    font-size:22px;
+}
+
+#movieDescription
+{
+    font-size:25px;
+}
+
+#trailer
+{
+    border-color:#000000;
+    width:800px; 
+    height:600px;
+}
+
+.links
+{
+    height:25px;
+    background-color:#420000;
+    list-style:none;
+    margin:0;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0;
+}
+
+.links a
+{
+    color:white;
+    text-decoration:none;
+}
+
+.links a:hover
+{
+    text-decoration:underline;
+    color:yellow;
+}
+
+.links li
+{
+    display:inline;
+}
+
+footer
+{
+    background-color:#363737;
+    height:50px;
+    max-height:50px;
+    padding-top:1px;
+    text-align:center;
+}
