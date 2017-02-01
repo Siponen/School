@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Coffee Party AB</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="coffee.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="banner" class="container-fluid">
+        <img class="img-responsive row" src="images/logo.png" />
+    </div>
+    <div id="coffeeNav"></div>
+
+    <div class="container">
+        <h1 class="col-xs-12">Coffee Party AB</h1>
+        <p class="col-xs-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <img class="col-xs-12" src="images/whoarewe.jpg" style="max-height:600px;">
+    </div>
+
+    <div class="container">
+        <h1 class="col-xs-12">Kontaktpersoner: </h1>
+        <div class="row spacing-25 col-xs-12">
+            <img class="img-responsive col-xs-6" src="images/placeholder-person2.jpg" style="max-width:200px; max-height:200px;" />
+            <div class="img-responsive col-xs-6">
+                <p>Wily Andersson, VD</p>
+                <p>08 1234567</p>
+                <p>Wily.Andersson@doom.net</p>
+            </div>
+        </div>
+
+        <div class="row spacing-25 col-xs-12">
+            <img class="img-responsive col-xs-6" src="images/placeholder-person.png" style="max-width:200px; max-height:200px;" />
+            <div class="img-responsive col-xs-6">
+                <p>Dagon Aghanim, HR</p>
+                <p>08 7654321</p>
+                <p>Dagon.Aghanim@dark.net</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="coffeeFooter"></div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="coffee.js"></script>
+
+    <script>
+        $("#coffeeNav").load("navbar.txt");
+    </script>
+
+    <script>
+        $("#coffeeFooter").load("footer.txt");
+    </script>
+</body>
+</html>

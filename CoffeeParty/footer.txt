@@ -1,0 +1,1 @@
+﻿<footer class="container-fluid">Made by Conny "Gentlemandapper" Siponen &#169; 2017</footer>
