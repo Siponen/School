@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Bishbosh 2.0</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <header> <h1>Bish-Bosh 2.0</h1> </header>
+    <p id="description">
+        This is a small script created as a school assignment.<br /><br />
+        BishBosh outputs a range of numbers, those numbers are divided with two specific integers. <br />
+        If the BishNumber is divisible without any remainder then the output will be 'Bish'.<br />
+        If the BoshNumber is divisible without any remainder then the output will be 'Bosh'. <br />
+        If both numbers are divisible without any remainder then the output will be 'Bish-Bosh'.<br />
+        <br />
+        BishNumber, BoshNumber and range must be larger than 0.
+    </p>
+
+    <form name="BishBoshForm">
+        BishNumber: <input id="bishNumber" type="number" name="bishNumber" required/><br />
+        BoshNumber: <input type="number" name="boshNumber" required/><br />
+        Range: <input id="range" type="number" name="numberOfIterations" required/><br />
+        <input type="button" value="Run BishBosh" onclick="BishBosh()"/>
+    </form>
+
+    <header><h3>Output:</h3></header>
+    <p id="BishBosh"></p>
+    <script src="script.js"></script>
+    
+    <footer>
+        Made by Conny "GentlemanDapper" Siponen &#169
+    </footer>
+</body>
+</html>

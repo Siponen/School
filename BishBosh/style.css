@@ -1,0 +1,33 @@
+header
+{
+    color:white;
+    background-color:gray;
+}
+
+#description
+{
+    font-size:17px;
+}
+
+input
+{
+    margin-top:10px;
+}
+
+#bishNumber
+{
+    margin-left:5px;
+}
+
+#range
+{
+    margin-left:45px;
+}
+
+footer 
+{
+    font-size:17px;
+    background-color:gray;
+    color:white;
+    text-align:center;
+}
