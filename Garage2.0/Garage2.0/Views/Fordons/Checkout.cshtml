@@ -1,0 +1,78 @@
+﻿@model Garage2._0.Models.Fordon
+
+@{
+    ViewBag.Title = "Checkout";
+}
+
+<h2>Checkout</h2>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Insert Registernumber @Html.TextBox("RegNr")
+        <input type="submit" value="Get" />
+    </p>
+}
+
+<div>
+    <h4>Fordon</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Typ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Typ)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegNr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegNr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Färg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Färg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AntalHjul)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AntalHjul)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Märke)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Märke)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Modell)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modell)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm("Receipt","Fordons"))
+    {
+        @Html.HiddenFor(model => model.Id); //Returning model.Id to Receipt in FordonsController.
+        @Html.AntiForgeryToken()
+        <div class="form-actions no-color">
+            <input type="submit" value="Check out" class="btn btn-default" />
+        </div>
+    }
+</div>

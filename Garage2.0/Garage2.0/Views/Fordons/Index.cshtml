@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Garage2._0.Models.Fordon>
+
+@{
+    ViewBag.Title = "Vehicle Details";
+}
+
+<h2>Vehicle Details</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Typ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RegNr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Färg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AntalHjul)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Märke)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Modell)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IncheckDatum)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model)
+{
+    string row = "";
+    if (item.Id == ViewBag.CheckedinFordonId)
+    {
+        row = "success";
+    }
+    <tr class="@row">
+        <td>
+            @Html.DisplayFor(modelItem => item.Typ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RegNr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Färg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AntalHjul)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Märke)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Modell)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IncheckDatum)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

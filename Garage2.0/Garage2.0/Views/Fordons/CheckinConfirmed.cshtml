@@ -1,0 +1,44 @@
+﻿@model Garage2._0.Models.Fordon
+
+@{
+    ViewBag.Title = "CheckinConfirmed";
+}
+
+<h2>CheckinConfirmed</h2>
+
+<p>You've successfully checked in your vehicle</p>
+<p>Enjoy your stay!</p>
+
+
+<dl class="dl-horizontal">
+    <dt>
+        @Html.DisplayNameFor(model => model.Typ)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Typ)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.RegNr)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.RegNr)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.Färg)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Färg)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.Märke)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Märke)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.IncheckDatum)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.IncheckDatum)
+    </dd>
+</dl>
